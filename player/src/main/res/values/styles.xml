@@ -1,0 +1,10 @@
+<resources>
+
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.DayNight">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/mateBlack</item>
+        <item name="colorPrimaryDark">@color/mateBlack</item>
+    </style>
+
+</resources>

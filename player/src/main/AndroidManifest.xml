@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mp4andmp3.superextremeplayer">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true">
+        <activity android:name="com.mp4andmp3.superextremeplayer.ContentActivity" />
+        <activity
+            android:name="com.mp4andmp3.superextremeplayer.PlayerMainActivity"/>
+
+
+        <activity
+            android:name="com.mp4andmp3.superextremeplayer.SplashScreen"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="com.mp4andmp3.superextremeplayer.GetVideoUrlActivity" />
+        <activity android:name="com.mp4andmp3.superextremeplayer.WebViewActivity" />
+        <activity android:name="com.mp4andmp3.superextremeplayer.AboutUs" />
+        <activity android:name="com.mp4andmp3.superextremeplayer.DownloadVideos" />
+
+        <service android:name="com.mp4andmp3.superextremeplayer.AudioService" />
+
+        <activity
+            android:name="com.mp4andmp3.superextremeplayer.WhatsappVideoList"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="com.mp4andmp3.superextremeplayer.AudioVideoList" />
+        <activity
+            android:name="com.mp4andmp3.superextremeplayer.AudioVideoFolders"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="com.mp4andmp3.superextremeplayer.ViewVideo"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:screenOrientation="landscape"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

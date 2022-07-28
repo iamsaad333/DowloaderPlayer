@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/facebookButton"
+                android:layout_width="300.0dip"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:src="@drawable/facebook_button" />
+
+            <ImageView
+                android:id="@+id/instagramButton"
+                android:layout_width="300.0dip"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:src="@drawable/instagram_button" />
+
+            <ImageView
+                android:id="@+id/twitterButton"
+                android:layout_width="300.0dip"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:src="@drawable/twitter_button" />
+
+            <ImageView
+                android:id="@+id/tiktokButton"
+                android:layout_width="300.0dip"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:src="@drawable/tiktok_button" />
+
+            <ImageView
+                android:id="@+id/vimeoButton"
+                android:layout_width="300.0dip"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:src="@drawable/vimeo_button" />
+
+            <ImageView
+                android:id="@+id/dailymotionButton"
+                android:layout_width="300.0dip"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:src="@drawable/dailymotion_button" />
+
+            <ImageView
+                android:id="@+id/topbuzzButton"
+                android:layout_width="300.0dip"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:src="@drawable/topbuzz_button" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/banner_ad_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="5.0dip" />
+</RelativeLayout>

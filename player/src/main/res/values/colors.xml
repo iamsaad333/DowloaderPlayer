@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorAccent">#ffd81b60</color>
+    <color name="colorBackground">#ffffffff</color>
+    <color name="colorGreen">#ff25d366</color>
+    <color name="colorNavbar">#fffafafa</color>
+    <color name="colorPrimary">#ffe0e0e0</color>
+    <color name="colorPrimaryDark">#ffbdbdbd</color>
+    <color name="colorRipple">#fff0f0f0</color>
+    <color name="colorTheme">#ffff0c0b</color>
+
+    <color name="gnt_ad_green">#ff3a6728</color>
+    <color name="gnt_black">#ff000000</color>
+    <color name="gnt_blue">#ff4285f4</color>
+    <color name="gnt_gray">#ff808080</color>
+    <color name="gnt_green">#ff00ff00</color>
+    <color name="gnt_outline">#ffe0e0e0</color>
+    <color name="gnt_red">#ffff0000</color>
+    <color name="gnt_test_background_color">#00f4f4f4</color>
+    <color name="gnt_test_background_color_2">#00a3a3a3</color>
+    <color name="gnt_white">#ffffffff</color>
+
+    <color name="progress_transparent">#ff6377a6</color>
+
+    <color name="textColor">#ff212121</color>
+
+    <color name="mateBlack">#464646</color>
+
+</resources>

@@ -1,0 +1,5 @@
+rootProject.name = "Dowloader Player"
+include ':app'
+include ':downloader'
+include ':player'
+include ':nativetemplates'

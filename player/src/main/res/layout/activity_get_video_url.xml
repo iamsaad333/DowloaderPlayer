@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/include">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="How to Use"
+                    android:textColor="@color/textColor"
+                    android:textSize="20.0dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pointsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:textColor="@color/textColor"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/pointOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:textColor="@color/textColor"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/pointTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:textColor="@color/textColor"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/noteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:textColor="@color/textColor"
+                    android:textSize="15.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="25.0dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="    Paste video link here"
+                    android:textColor="#ff212121"
+                    android:textColorHint="#ff212121" />
+
+                <LinearLayout
+                    android:id="@+id/radioGroupLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Video Quality"
+                        android:textColor="@color/textColor"
+                        android:textSize="19.0dip"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="16.0dip"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbtn_144"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="144p" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_240"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="240p" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_380"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="380p" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_480"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="480p" />
+
+                        <RadioButton
+                            android:id="@+id/rbtn_720"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="720p" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@color/colorTheme"
+                    android:padding="10.0dip"
+                    android:text="Download Video"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/banner_ad_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="5.0dip" />
+</RelativeLayout>
